@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const video = await loadVideo("assets/CarVideo/Demo"+i+".mp4");
     const texture = new THREE.VideoTexture(video);
 
-    const geometry = new THREE.PlaneGeometry(1, 320/480);
+    const geometry = new THREE.PlaneGeometry(1, 204/480);
     const material = new THREE.MeshBasicMaterial({map: texture});
     const plane = new THREE.Mesh(geometry, material);
 
